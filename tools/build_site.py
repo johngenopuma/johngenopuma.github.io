@@ -98,7 +98,7 @@ def index(c: dict) -> str:
     services = "".join(f'<li><a href="#contact" data-shoot="{escape(s)}">{escape(s)}</a></li>' for s in c["services"])
     options = "".join(f"<option>{escape(s)}</option>" for s in c["services"])
     body = f"""<section class="intro">
-  <h1>Portraits, events, sports, and food, photographed in Telluride and Boulder, Colorado.</h1>
+  <h1>Portraits, events, sports, and food. Based in Telluride and Boulder, Colorado.</h1>
   <p>Now booking senior portraits, headshots, and events. <a href="#contact">Get in touch</a></p>
 </section>
 <section id="work" class="work" aria-label="Photography">
@@ -131,7 +131,7 @@ def index(c: dict) -> str:
   </form>
 </section>"""
     return page("Grace Gilhool | Photography",
-                "Grace Gilhool photographs portraits, events, sports, and food in Telluride and Boulder, Colorado.",
+                "Grace Gilhool photographs portraits, events, sports, and food. Based in Telluride and Boulder, Colorado.",
                 "Photography", body)
 
 
@@ -148,13 +148,13 @@ def architecture(c: dict) -> str:
     </div>
   </article>""")
     body = f"""<section class="intro">
-  <h1>Architecture and design work from CU Boulder: physical models and furniture.</h1>
+  <h1>Architecture and design work from CU Boulder and Copenhagen.</h1>
 </section>
 <section class="projects" data-lightbox>
 {chr(10).join(projects)}
 </section>"""
     return page("Architecture & Design | Grace Gilhool",
-                "Architecture models and furniture by Grace Gilhool, architecture student at CU Boulder.",
+                "Architecture models and furniture by Grace Gilhool, from CU Boulder and a study abroad in Copenhagen.",
                 "Architecture", body)
 
 
