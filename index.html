@@ -26,13 +26,41 @@
 						<h1><a href="index.html"><strong>Grace Gilhool Photos</strong> </a></h1>
 						<nav>
 							<ul>
-								<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+								<li><a href="#footer" class="icon solid fa-info-circle">About &amp; Contact</a></li>
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Main -->
 					<div id="main">
+						<article class="thumb">
+							<a href="images/fulls/model-green-roof.webp" class="image"><img src="images/thumbs/model-green-roof.webp" alt="Architectural model with a planted green roof and solar panels" /></a>
+							<h2>Green Roof</h2>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/model-frame.webp" class="image"><img src="images/thumbs/model-frame.webp" alt="Architectural model with a metal frame structure and dried flowers" /></a>
+							<h2>Frame and Flowers</h2>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/chair.webp" class="image"><img src="images/thumbs/chair.webp" alt="Plywood chair on a gray backdrop" /></a>
+							<h2>Chair</h2>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/model-house.webp" class="image"><img src="images/thumbs/model-house.webp" alt="Wooden model of a two-story house" /></a>
+							<h2>House Model</h2>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/chair-seated.webp" class="image"><img src="images/thumbs/chair-seated.webp" alt="Someone sitting in the plywood chair" /></a>
+							<h2>Chair, Occupied</h2>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/graffiti-house.webp" class="image"><img src="images/thumbs/graffiti-house.webp" alt="Small house covered in graffiti" /></a>
+							<h2>Graffiti House</h2>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/canal.webp" class="image"><img src="images/thumbs/canal.webp" alt="Tree-lined canal with moored boats" /></a>
+							<h2>Canal</h2>
+						</article>
 						<article class="thumb">
 							<a href="images/fulls/youngman.webp" class="image"><img src="images/thumbs/youngman.webp" alt="" /></a>
 							<h2>Young Man</h2>
@@ -47,6 +75,10 @@
 							<a href="images/fulls/img-9500.webp" class="image"><img src="images/thumbs/img-9500.webp" alt="" /></a>
 							<h2>Flowers</h2>
 							<p>I honestly had no clue what to say for this one</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/boots.webp" class="image"><img src="images/thumbs/boots.webp" alt="Rain boots used as flower pots" /></a>
+							<h2>Boots</h2>
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/img-9501.webp" class="image"><img src="images/thumbs/img-9501.webp" alt="" /></a>
@@ -64,6 +96,10 @@
 							<p>This photo was taken on some expensive ass camera :)</p>
 						</article>
 						<article class="thumb">
+							<a href="images/fulls/elk.webp" class="image"><img src="images/thumbs/elk.webp" alt="Two young elk in a meadow" /></a>
+							<h2>Elk</h2>
+						</article>
+						<article class="thumb">
 							<a href="images/fulls/orangebird.webp" class="image"><img src="images/thumbs/orangebird.webp" alt="" /></a>
 							<h2>Bird</h2>
 							<p>Nothin' much about it, just birds being birds. </p>
@@ -77,6 +113,10 @@
 							<a href="images/fulls/img-9506.webp" class="image"><img src="images/thumbs/img-9506.webp" alt="" /></a>
 							<h2>Telluride</h2>
 							<p>I hope this is Telluride, because it is the name of the photo.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/mountains.webp" class="image"><img src="images/thumbs/mountains.webp" alt="Green mountain valley under clouds" /></a>
+							<h2>Valley</h2>
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/tula.webp" class="image"><img src="images/thumbs/tula.webp" alt="" /></a>
@@ -118,28 +158,31 @@
 									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a> and <a href="https://www.instagram.com/johngenopuma/">John Pumayalli</a>
 								</p>
 							</div>
-							<!-- <div>
+							<div>
 								<section>
 									<h2>Get in touch</h2>
-									<form method="post" action="#">
+									<form id="contact" method="post" action="https://formsubmit.co/johnpuma@stanford.edu">
+										<input type="hidden" name="_subject" value="New message from Grace Gilhool Photos" />
+										<input type="hidden" name="_template" value="table" />
+										<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 										<div class="fields">
 											<div class="field half">
-												<input type="text" name="name" id="name" placeholder="Name" />
+												<input type="text" name="name" id="name" placeholder="Name" required />
 											</div>
 											<div class="field half">
-												<input type="text" name="email" id="email" placeholder="Email" />
+												<input type="email" name="email" id="email" placeholder="Email" required />
 											</div>
 											<div class="field">
-												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+												<textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
 											</div>
 										</div>
 										<ul class="actions">
 											<li><input type="submit" value="Send" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
 										</ul>
+										<p id="contact-status" role="status"></p>
 									</form>
 								</section>
-							</div> -->
+							</div>
 						</div>
 					</footer>
 
@@ -152,6 +195,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Send the contact form without leaving the page; plain POST still works without JS.
+				document.getElementById("contact").addEventListener("submit", function (e) {
+					e.preventDefault();
+					var form = this, status = document.getElementById("contact-status"), button = form.querySelector("[type=submit]");
+					button.disabled = true;
+					status.textContent = "Sending...";
+					fetch(form.action.replace("formsubmit.co/", "formsubmit.co/ajax/"), {
+						method: "POST",
+						headers: { "Accept": "application/json" },
+						body: new FormData(form)
+					})
+						.then(function (r) { return r.json(); })
+						.then(function (d) {
+							if (String(d.success) !== "true") throw new Error(d.message);
+							form.reset();
+							status.textContent = "Thanks! Your message was sent.";
+						})
+						.catch(function () { status.textContent = "Sorry, that didn't send. Please try again in a minute."; })
+						.then(function () { button.disabled = false; });
+				});
+			</script>
 
 	</body>
 </html>
