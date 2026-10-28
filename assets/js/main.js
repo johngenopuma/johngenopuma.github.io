@@ -210,6 +210,16 @@
 		var $main = $('#main');
 
 		// Thumbs.
+			// Tile backgrounds load as they near the viewport, not all at once.
+			var lazy = 'IntersectionObserver' in window && new IntersectionObserver(function(entries) {
+				entries.forEach(function(e) {
+					if (!e.isIntersecting)
+						return;
+					$(e.target).css('background-image', 'url(' + $(e.target).data('src') + ')');
+					lazy.unobserve(e.target);
+				});
+			}, { rootMargin: '400px 0px' });
+
 			$main.children('.thumb').each(function() {
 
 				var	$this = $(this),
@@ -225,7 +235,11 @@
 				// <img> (which is then hidden). Gives us way more flexibility.
 
 					// Set background.
-						$image.css('background-image', 'url(' + $image_img.attr('src') + ')');
+						$image.data('src', $image_img.attr('data-src') || $image_img.attr('src'));
+						if (lazy)
+							lazy.observe($image[0]);
+						else
+							$image.css('background-image', 'url(' + $image.data('src') + ')');
 
 					// Set background position.
 						if (x = $image_img.data('position'))
