@@ -1,0 +1,71 @@
+{
+  "categories": {
+    "portraits": "Portraits",
+    "events": "Events & Sports",
+    "food": "Food",
+    "film": "Film",
+    "places": "Places & Nature"
+  },
+  "photography": [
+    {"slug": "beret-portrait", "tag": "portraits", "title": "Orange Beret", "caption": "", "alt": "Studio portrait of a man in an orange beret, sitting on the floor and looking up"},
+    {"slug": "skate", "tag": "events", "title": "Airborne", "caption": "", "alt": "Skateboarder mid-air above a crowd at Skate4Nate"},
+    {"slug": "mountains", "tag": "places", "title": "Valley", "caption": "", "alt": "Green mountain valley under low clouds"},
+    {"slug": "senior-portrait", "tag": "portraits", "title": "Senior Portrait", "caption": "", "alt": "Smiling teen in a dark shirt in front of golden aspens"},
+    {"slug": "salad-bowls", "tag": "food", "title": "Two Bowls", "caption": "", "alt": "Server in an apron holding out two salad bowls"},
+    {"slug": "film-chair", "tag": "film", "title": "Chair, on Film", "caption": "", "alt": "Two black-and-white film prints: an overturned chair in grass, and someone lying back in it on a hillside"},
+    {"slug": "lacrosse", "tag": "events", "title": "Ground Ball", "caption": "", "alt": "Lacrosse players scrambling for a ground ball"},
+    {"slug": "owen", "tag": "portraits", "title": "Owen D vibing", "caption": "Monster Energy Drink, please sponsor Owen", "alt": "Smiling young man in a beanie and patterned fleece among aspens"},
+    {"slug": "graffiti-house", "tag": "places", "title": "Graffiti House", "caption": "", "alt": "Small gabled house covered in graffiti"},
+    {"slug": "headshot", "tag": "portraits", "title": "Headshot", "caption": "", "alt": "Smiling woman leaning on an aspen trunk with fall leaves behind her"},
+    {"slug": "orangebird", "tag": "places", "title": "Bird", "caption": "Nothin' much about it, just birds being birds. ", "alt": "Orange bird with a long tail perched on a mossy branch"},
+    {"slug": "canal", "tag": "places", "title": "Canal", "caption": "", "alt": "Tree-lined canal with moored boats"},
+    {"slug": "cocktail", "tag": "food", "title": "Cocktail", "caption": "", "alt": "Pink cocktail with a rosemary garnish beside a salad"},
+    {"slug": "tula", "tag": "portraits", "title": "Indecisiveness", "caption": "Clearly Tula is on the fence about something... again.", "alt": "Young woman in a white dress by a wooden fence below red mountains"},
+    {"slug": "elk", "tag": "places", "title": "Elk", "caption": "", "alt": "Two young elk in a meadow"},
+    {"slug": "img-9503", "tag": "events", "title": "#3 on the field", "caption": "This photo was taken on some expensive ass camera :)", "alt": "Telluride lacrosse player driving past a defender"},
+    {"slug": "lucja", "tag": "portraits", "title": "Lucja", "caption": "Lucja in math class, surrounded by logs", "alt": "Young woman framed by driftwood logs on a beach"},
+    {"slug": "boots", "tag": "places", "title": "Boots", "caption": "", "alt": "Rain boots used as flower pots"},
+    {"slug": "youngman", "tag": "portraits", "title": "Young Man", "caption": "Just a brotha enjoying his chips", "alt": "Young boy eating chips outdoors"},
+    {"slug": "img-9506", "tag": "places", "title": "Telluride", "caption": "I hope this is Telluride, because it is the name of the photo.", "alt": "Snow-dusted mountain valley with red autumn trees"},
+    {"slug": "img-9501", "tag": "portraits", "title": "Happy Olivia and Contemplative Tula", "caption": "Olivia just enjoying sitting down for once. Tula be like: \"Damnnn\"", "alt": "Two friends resting on red rocks"},
+    {"slug": "monkey", "tag": "places", "title": "Monkey", "caption": "A monkey in Costa Rica", "alt": "Monkey in a leafy tree"},
+    {"slug": "img-9511", "tag": "places", "title": "Earf DAY", "caption": "For all Earth Day haters: \"F U\"", "alt": "Person crossing a suspension bridge into the jungle"},
+    {"slug": "img-9500", "tag": "places", "title": "Flowers", "caption": "I honestly had no clue what to say for this one", "alt": "Small yellow wildflowers against a sandstone wall"},
+    {"slug": "img-9512", "tag": "places", "title": "Lone Tree", "caption": "The inconstency of the Tree's trajectory is highlited by a beautiful sunset on some beach.", "alt": "Driftwood tree silhouetted on a beach at sunset"}
+  ],
+  "architecture": [
+    {
+      "title": "Terraces",
+      "kind": "Physical model",
+      "text": "A roof that steps up the building in planted terraces, with a lawn on the lower level and a solar array at the top.",
+      "images": [{"slug": "model-green-roof", "alt": "Architectural model with stepped planted terraces, a rooftop lawn and solar panels"}]
+    },
+    {
+      "title": "House Model",
+      "kind": "Physical model",
+      "text": "A compact two-story house of shifted volumes, topped with a curved green roof.",
+      "images": [{"slug": "model-house", "alt": "Wooden model of a two-story house with a curved green roof"}]
+    },
+    {
+      "title": "Frame and Flowers",
+      "kind": "Physical model",
+      "text": "A small enclosed room set beside an open metal frame, with dried flowers growing through the structure.",
+      "images": [{"slug": "model-frame", "alt": "Architectural model of a white room beside an open gray frame, with dried flowers"}]
+    },
+    {
+      "title": "Chair",
+      "kind": "Furniture",
+      "text": "A plywood lounge chair with a curved backrest and splayed legs, built at full scale.",
+      "images": [
+        {"slug": "chair", "alt": "Plywood lounge chair on a gray backdrop"},
+        {"slug": "chair-seated", "alt": "Someone sitting in the plywood chair"}
+      ]
+    }
+  ],
+  "about": [
+    "Grace Gilhool is a photographer from Telluride, Colorado, and an architecture student at CU Boulder.",
+    "She has been shooting professionally since 2019: senior portraits for more than fifteen classmates, Telluride High School's class of 2024 graduation photo, the boys lacrosse team from 2020 to 2024, staff headshots for Bright Futures, and the menu and website photos for Liz To Go. Her event work runs from the Telluride Adaptive Sports Program's Blue Room fundraiser to Skate4Nate.",
+    "She also shoots black-and-white film, with three courses from beginner to expert level behind her and a Best Student of the Year award in 2023. In 2022 she was one of twenty students selected for the Telluride Film Festival's student program."
+  ],
+  "services": ["Senior portraits", "Family & holiday cards", "Headshots", "Events", "Sports", "Food & restaurants"]
+}
