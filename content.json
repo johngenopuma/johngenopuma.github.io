@@ -52,8 +52,8 @@
     },
     {
       "title": "Chair",
-      "kind": "Furniture",
-      "text": "A plywood lounge chair with a curved backrest and splayed legs, designed during her study abroad in Copenhagen.",
+      "kind": "Furniture · Designed and built by Grace",
+      "text": "Grace designed and built this plywood lounge chair herself during her study abroad in Copenhagen: a curved backrest on splayed legs.",
       "images": [
         {"slug": "chair", "alt": "Plywood lounge chair on a gray backdrop"},
         {"slug": "chair-seated", "alt": "Someone sitting in the plywood chair"}
