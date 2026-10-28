@@ -72,7 +72,7 @@ def page(title: str, description: str, current: str, body: str) -> str:
 </main>
 <footer class="site-footer">
   <p>&copy; Grace Gilhool &middot; <a href="{INSTAGRAM}">Instagram</a> &middot; <a href="mailto:gracegilhool@gmail.com">gracegilhool@gmail.com</a></p>
-  <p class="credit">Site by <a href="https://www.instagram.com/johngenopuma/">John Pumayalli</a></p>
+  <p class="credit">Site by <a href="https://www.linkedin.com/in/johnpumayalli/">John Pumayalli</a></p>
 </footer>
 <dialog class="lightbox" aria-label="Photo viewer">
   <button class="lb-close" type="button" aria-label="Close">&times;</button>
