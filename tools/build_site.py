@@ -98,8 +98,8 @@ def index(c: dict) -> str:
     services = "".join(f'<li><a href="#contact" data-shoot="{escape(s)}">{escape(s)}</a></li>' for s in c["services"])
     options = "".join(f"<option>{escape(s)}</option>" for s in c["services"])
     body = f"""<section class="intro">
-  <h1>Portraits, events, sports and food, photographed in Telluride and Boulder, Colorado.</h1>
-  <p>Now booking senior portraits, headshots and events. <a href="#contact">Get in touch</a></p>
+  <h1>Portraits, events, sports, and food, photographed in Telluride and Boulder, Colorado.</h1>
+  <p>Now booking senior portraits, headshots, and events. <a href="#contact">Get in touch</a></p>
 </section>
 <section id="work" class="work" aria-label="Photography">
   <div class="filters" role="group" aria-label="Filter photos">{filters}</div>
@@ -131,7 +131,7 @@ def index(c: dict) -> str:
   </form>
 </section>"""
     return page("Grace Gilhool | Photography",
-                "Grace Gilhool photographs portraits, events, sports and food in Telluride and Boulder, Colorado.",
+                "Grace Gilhool photographs portraits, events, sports, and food in Telluride and Boulder, Colorado.",
                 "Photography", body)
 
 

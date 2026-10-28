@@ -5,7 +5,8 @@ Usage: python3 tools/build_images.py path/to/photo.jpg [more photos...]
 For each photo writes images/thumbs/<name>.webp (grid tile) and
 images/fulls/<name>.webp (lightbox), where <name> is the lowercased file
 stem. Camera rotation is applied, white padding (as on Instagram exports)
-is trimmed, and all metadata (EXIF, GPS) is dropped. Originals live in
+and stray light edge lines are trimmed, and all metadata (EXIF, GPS) is
+dropped. Originals live in
 originals/, which is gitignored: everything committed here is published.
 """
 import sys
@@ -39,11 +40,32 @@ def trim_box(im: Image.Image) -> tuple:
     return (h, v, im.width - h, im.height - v)
 
 
+def hairline_box(im: Image.Image) -> tuple:
+    """Box without the 1-3px light lines screenshots and exports leave on an edge.
+
+    A line counts only if it is near-white and clearly brighter than the photo
+    just inside it, so a pale studio backdrop is kept.
+    """
+    g = np.asarray(im.convert("L")).astype(float)
+
+    def lines(edge):
+        means = edge.mean(axis=1)
+        k = 0
+        while k < 3 and means[k] >= 230 and means[k] - means[k + 3] >= 15:
+            k += 1
+        return k
+
+    top, bottom = lines(g), lines(g[::-1])
+    left, right = lines(g.T), lines(g.T[::-1])
+    return (left, top, im.width - right, im.height - bottom)
+
+
 def build(src: Path) -> None:
     name = src.stem.lower().replace(" ", "-")
     with Image.open(src) as im:
         im = ImageOps.exif_transpose(im).convert("RGB")
         im = im.crop(trim_box(im))
+        im = im.crop(hairline_box(im))
         for folder, (edge, quality) in SIZES.items():
             out = ROOT / "images" / folder / f"{name}.webp"
             copy = im.copy()
